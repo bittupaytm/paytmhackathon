@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6049635E1C4F58F200FB0090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6049635D1C4F58F200FB0090 /* main.m */; };
+		604963611C4F58F200FB0090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 604963601C4F58F200FB0090 /* AppDelegate.m */; };
+		604963691C4F58F200FB0090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604963681C4F58F200FB0090 /* Assets.xcassets */; };
+		6049636C1C4F58F200FB0090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6049636A1C4F58F200FB0090 /* LaunchScreen.storyboard */; };
+		6049637B1C4F594300FB0090 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604963791C4F594300FB0090 /* HomeViewController.m */; };
+		6049637C1C4F594300FB0090 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6049637A1C4F594300FB0090 /* HomeViewController.xib */; };
+		604963801C4F595500FB0090 /* WhatsAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6049637E1C4F595500FB0090 /* WhatsAppViewController.m */; };
+		604963811C4F595500FB0090 /* WhatsAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6049637F1C4F595500FB0090 /* WhatsAppViewController.xib */; };
+		604963851C4F596200FB0090 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604963831C4F596200FB0090 /* TwitterViewController.m */; };
+		604963861C4F596200FB0090 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604963841C4F596200FB0090 /* TwitterViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		604963591C4F58F200FB0090 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6049635D1C4F58F200FB0090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6049635F1C4F58F200FB0090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		604963601C4F58F200FB0090 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		604963681C4F58F200FB0090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6049636B1C4F58F200FB0090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6049636D1C4F58F200FB0090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604963781C4F594300FB0090 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		604963791C4F594300FB0090 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		6049637A1C4F594300FB0090 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		6049637D1C4F595500FB0090 /* WhatsAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppViewController.h; sourceTree = "<group>"; };
+		6049637E1C4F595500FB0090 /* WhatsAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppViewController.m; sourceTree = "<group>"; };
+		6049637F1C4F595500FB0090 /* WhatsAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhatsAppViewController.xib; sourceTree = "<group>"; };
+		604963821C4F596200FB0090 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		604963831C4F596200FB0090 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		604963841C4F596200FB0090 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		604963561C4F58F200FB0090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		604963501C4F58F200FB0090 = {
+			isa = PBXGroup;
+			children = (
+				6049635B1C4F58F200FB0090 /* Hackathon */,
+				6049635A1C4F58F200FB0090 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6049635A1C4F58F200FB0090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				604963591C4F58F200FB0090 /* Hackathon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6049635B1C4F58F200FB0090 /* Hackathon */ = {
+			isa = PBXGroup;
+			children = (
+				604963741C4F591200FB0090 /* Classes */,
+				604963731C4F590500FB0090 /* AppDelegate */,
+				604963681C4F58F200FB0090 /* Assets.xcassets */,
+				6049636A1C4F58F200FB0090 /* LaunchScreen.storyboard */,
+				6049636D1C4F58F200FB0090 /* Info.plist */,
+				6049635C1C4F58F200FB0090 /* Supporting Files */,
+			);
+			path = Hackathon;
+			sourceTree = "<group>";
+		};
+		6049635C1C4F58F200FB0090 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6049635D1C4F58F200FB0090 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		604963731C4F590500FB0090 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6049635F1C4F58F200FB0090 /* AppDelegate.h */,
+				604963601C4F58F200FB0090 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		604963741C4F591200FB0090 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				604963771C4F592400FB0090 /* Twitter */,
+				604963761C4F591C00FB0090 /* Whatspp */,
+				604963751C4F591700FB0090 /* Home */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		604963751C4F591700FB0090 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				604963781C4F594300FB0090 /* HomeViewController.h */,
+				604963791C4F594300FB0090 /* HomeViewController.m */,
+				6049637A1C4F594300FB0090 /* HomeViewController.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		604963761C4F591C00FB0090 /* Whatspp */ = {
+			isa = PBXGroup;
+			children = (
+				6049637D1C4F595500FB0090 /* WhatsAppViewController.h */,
+				6049637E1C4F595500FB0090 /* WhatsAppViewController.m */,
+				6049637F1C4F595500FB0090 /* WhatsAppViewController.xib */,
+			);
+			name = Whatspp;
+			sourceTree = "<group>";
+		};
+		604963771C4F592400FB0090 /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				604963821C4F596200FB0090 /* TwitterViewController.h */,
+				604963831C4F596200FB0090 /* TwitterViewController.m */,
+				604963841C4F596200FB0090 /* TwitterViewController.xib */,
+			);
+			name = Twitter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		604963581C4F58F200FB0090 /* Hackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604963701C4F58F200FB0090 /* Build configuration list for PBXNativeTarget "Hackathon" */;
+			buildPhases = (
+				604963551C4F58F200FB0090 /* Sources */,
+				604963561C4F58F200FB0090 /* Frameworks */,
+				604963571C4F58F200FB0090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hackathon;
+			productName = Hackathon;
+			productReference = 604963591C4F58F200FB0090 /* Hackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		604963511C4F58F200FB0090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Paytm;
+				TargetAttributes = {
+					604963581C4F58F200FB0090 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 604963541C4F58F200FB0090 /* Build configuration list for PBXProject "Hackathon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 604963501C4F58F200FB0090;
+			productRefGroup = 6049635A1C4F58F200FB0090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				604963581C4F58F200FB0090 /* Hackathon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		604963571C4F58F200FB0090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6049636C1C4F58F200FB0090 /* LaunchScreen.storyboard in Resources */,
+				604963691C4F58F200FB0090 /* Assets.xcassets in Resources */,
+				604963861C4F596200FB0090 /* TwitterViewController.xib in Resources */,
+				604963811C4F595500FB0090 /* WhatsAppViewController.xib in Resources */,
+				6049637C1C4F594300FB0090 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		604963551C4F58F200FB0090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604963611C4F58F200FB0090 /* AppDelegate.m in Sources */,
+				6049635E1C4F58F200FB0090 /* main.m in Sources */,
+				604963801C4F595500FB0090 /* WhatsAppViewController.m in Sources */,
+				604963851C4F596200FB0090 /* TwitterViewController.m in Sources */,
+				6049637B1C4F594300FB0090 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6049636A1C4F58F200FB0090 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6049636B1C4F58F200FB0090 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6049636E1C4F58F200FB0090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6049636F1C4F58F200FB0090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		604963711C4F58F200FB0090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.Hackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		604963721C4F58F200FB0090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.Hackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		604963541C4F58F200FB0090 /* Build configuration list for PBXProject "Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6049636E1C4F58F200FB0090 /* Debug */,
+				6049636F1C4F58F200FB0090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		604963701C4F58F200FB0090 /* Build configuration list for PBXNativeTarget "Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604963711C4F58F200FB0090 /* Debug */,
+				604963721C4F58F200FB0090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 604963511C4F58F200FB0090 /* Project object */;
+}

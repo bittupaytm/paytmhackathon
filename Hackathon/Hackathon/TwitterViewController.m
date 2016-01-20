@@ -37,6 +37,7 @@ CGFloat headerLabelDistance = 35;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Twitter";
+    [self.navigationController setNavigationBarHidden:YES];
     [self.navigationController setHidesBarsOnTap:YES];
     self.navigationController.hidesBarsOnSwipe = YES;
     _scrollView.delegate = self;

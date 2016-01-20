@@ -66,7 +66,7 @@
 
 - (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [NSString stringWithFormat:@"Section: %d",section+1];
+    return [NSString stringWithFormat:@"Section: %ld",section+1];
 }
 
 #pragma mark- UITablewView Delegate (UIScrollView)

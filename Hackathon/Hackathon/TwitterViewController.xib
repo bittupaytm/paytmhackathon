@@ -95,11 +95,11 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRk-zW-oZf" userLabel="ScrollViewAdjuster">
-                                    <rect key="frame" x="0.0" y="477" width="600" height="310"/>
+                                    <rect key="frame" x="0.0" y="477" width="600" height="350"/>
                                     <animations/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="310" id="SeW-4C-OOE"/>
+                                        <constraint firstAttribute="height" constant="350" id="SeW-4C-OOE"/>
                                     </constraints>
                                 </view>
                             </subviews>

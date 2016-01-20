@@ -13,7 +13,7 @@
 
 @interface UIImage (CustomAnimationView)
 
-- (UIImage *)blurredImageWithRadius:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor;
+- (UIImage *)imageBlurWithWidth:(CGFloat)width iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor;
 
 
 @end

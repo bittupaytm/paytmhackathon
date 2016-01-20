@@ -52,7 +52,7 @@ CGFloat headerLabelDistance = 35;
 {
     [super viewWillAppear:animated];
     _headerBlurredView = [[UIImageView alloc] initWithFrame:_headerView.bounds];
-    _headerBlurredView.image = [[UIImage imageNamed:@"header.jpeg"] blurredImageWithRadius:10 iterations:20 tintColor:[UIColor clearColor]];
+    _headerBlurredView.image = [[UIImage imageNamed:@"header.jpeg"] imageBlurWithWidth:10 iterations:20 tintColor:[UIColor clearColor]];
     _headerBlurredView.contentMode = UIViewContentModeScaleAspectFill;
     _headerBlurredView.alpha = 0.0;
     [_headerView insertSubview:_headerBlurredView belowSubview:_nameLabelHeader];

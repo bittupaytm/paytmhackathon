@@ -9,13 +9,13 @@
 #import "UIImage+CustomAnimationView.h"
 
 @implementation UIImage (CustomAnimationView)
-- (UIImage *)blurredImageWithRadius:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor
+- (UIImage *)imageBlurWithWidth:(CGFloat)width iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor
 {
     //image must be nonzero size
     if (floorf(self.size.width) * floorf(self.size.height) <= 0.0f) return self;
     
     //boxsize must be an odd integer
-    uint32_t boxSize = (uint32_t)(radius * self.scale);
+    uint32_t boxSize = (uint32_t)(width * self.scale);
     if (boxSize % 2 == 0) boxSize ++;
     
     //create image buffers

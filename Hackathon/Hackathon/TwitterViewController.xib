@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwitterViewController">
             <connections>
+                <outlet property="composeButton" destination="iK7-2b-cqF" id="MqQ-Nb-F2G"/>
+                <outlet property="contentView" destination="HUc-8o-xBI" id="fT6-W8-yM5"/>
+                <outlet property="headerImage" destination="TTx-5q-lNL" id="lV9-dN-keO"/>
+                <outlet property="headerView" destination="JoO-mR-9lD" id="WXw-hb-uOL"/>
+                <outlet property="nameLabel" destination="Pcv-el-A80" id="rbX-Lz-xc0"/>
+                <outlet property="nameLabelHeader" destination="YrF-Nt-65Y" id="tZH-hI-toH"/>
+                <outlet property="profileImageView" destination="UFQ-Qf-Rl2" id="Pet-Qx-qTK"/>
+                <outlet property="scrollView" destination="jeV-bc-bMp" id="mU8-e2-Rei"/>
+                <outlet property="scrollViewAdjuster" destination="XRk-zW-oZf" id="Ckp-VB-aDo"/>
+                <outlet property="userNameLabel" destination="kJ5-8u-XKK" id="oVd-c2-7dg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +24,121 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-8o-xBI" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoO-mR-9lD" userLabel="Header">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-5q-lNL">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="107"/>
+                                    <animations/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sudeep Unnikrishnan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrF-Nt-65Y" userLabel="Sudeep Unnikrishnan">
+                                    <rect key="frame" x="216" y="104" width="168" height="21"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="TTx-5q-lNL" firstAttribute="top" secondItem="JoO-mR-9lD" secondAttribute="top" id="99t-NF-frZ"/>
+                                <constraint firstItem="TTx-5q-lNL" firstAttribute="width" secondItem="JoO-mR-9lD" secondAttribute="width" id="EVx-jb-JPD"/>
+                                <constraint firstAttribute="bottom" secondItem="TTx-5q-lNL" secondAttribute="bottom" id="T0B-c0-TDj"/>
+                                <constraint firstAttribute="height" constant="107" id="cep-HY-3cw"/>
+                                <constraint firstItem="TTx-5q-lNL" firstAttribute="leading" secondItem="JoO-mR-9lD" secondAttribute="leading" id="lr3-md-MGX"/>
+                                <constraint firstItem="YrF-Nt-65Y" firstAttribute="top" secondItem="JoO-mR-9lD" secondAttribute="top" constant="104" id="rfV-MR-tdQ"/>
+                                <constraint firstItem="YrF-Nt-65Y" firstAttribute="centerX" secondItem="JoO-mR-9lD" secondAttribute="centerX" id="xq1-Ob-AHL"/>
+                                <constraint firstAttribute="trailing" secondItem="TTx-5q-lNL" secondAttribute="trailing" id="ycs-XQ-FK9"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="EVx-jb-JPD"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-bc-bMp" userLabel="Scrollview">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UFQ-Qf-Rl2" userLabel="ProfileImage">
+                                    <rect key="frame" x="8" y="79" width="69" height="69"/>
+                                    <animations/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sudeep Unnikrishnan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcv-el-A80">
+                                    <rect key="frame" x="8" y="156" width="224" height="22"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK7-2b-cqF" userLabel="Compose">
+                                    <rect key="frame" x="478" y="118" width="112" height="30"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="V0d-Ij-byU"/>
+                                        <constraint firstAttribute="width" constant="112" id="Zqj-Uw-5QF"/>
+                                    </constraints>
+                                    <state key="normal" title="Compose">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.67450980390000004" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@sudeep_uk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ5-8u-XKK" userLabel="Username">
+                                    <rect key="frame" x="8" y="177" width="128" height="21"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.41960784309999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRk-zW-oZf" userLabel="ScrollViewAdjuster">
+                                    <rect key="frame" x="0.0" y="477" width="600" height="310"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="310" id="SeW-4C-OOE"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstItem="XRk-zW-oZf" firstAttribute="leading" secondItem="jeV-bc-bMp" secondAttribute="leading" id="2vj-tt-lyf"/>
+                                <constraint firstItem="iK7-2b-cqF" firstAttribute="top" secondItem="jeV-bc-bMp" secondAttribute="top" constant="118" id="DYF-DT-vyL"/>
+                                <constraint firstAttribute="trailing" secondItem="iK7-2b-cqF" secondAttribute="trailing" constant="10" id="KBS-dW-Qe8"/>
+                                <constraint firstAttribute="bottom" secondItem="XRk-zW-oZf" secondAttribute="bottom" constant="37" id="T1e-QC-QfG"/>
+                                <constraint firstItem="XRk-zW-oZf" firstAttribute="top" secondItem="jeV-bc-bMp" secondAttribute="top" constant="477" id="WdN-s2-YrM"/>
+                                <constraint firstAttribute="trailing" secondItem="XRk-zW-oZf" secondAttribute="trailing" id="nZc-9S-TNb"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="XRk-zW-oZf" firstAttribute="width" secondItem="HUc-8o-xBI" secondAttribute="width" id="4zI-er-nyM"/>
+                        <constraint firstItem="JoO-mR-9lD" firstAttribute="top" secondItem="HUc-8o-xBI" secondAttribute="top" id="90m-jd-ofb"/>
+                        <constraint firstAttribute="bottom" secondItem="jeV-bc-bMp" secondAttribute="bottom" id="BAa-ah-VaO"/>
+                        <constraint firstAttribute="trailing" secondItem="jeV-bc-bMp" secondAttribute="trailing" id="FBc-nQ-0lZ"/>
+                        <constraint firstItem="JoO-mR-9lD" firstAttribute="leading" secondItem="HUc-8o-xBI" secondAttribute="leading" id="GAh-ty-D7i"/>
+                        <constraint firstAttribute="trailing" secondItem="JoO-mR-9lD" secondAttribute="trailing" id="Osz-ZO-dXs"/>
+                        <constraint firstItem="jeV-bc-bMp" firstAttribute="top" secondItem="HUc-8o-xBI" secondAttribute="top" id="SMD-gT-fQO"/>
+                        <constraint firstItem="jeV-bc-bMp" firstAttribute="leading" secondItem="HUc-8o-xBI" secondAttribute="leading" id="Skh-qO-8eV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HUc-8o-xBI" secondAttribute="bottom" id="9lM-n6-6gp"/>
+                <constraint firstItem="HUc-8o-xBI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VxJ-fM-QwN"/>
+                <constraint firstAttribute="trailing" secondItem="HUc-8o-xBI" secondAttribute="trailing" id="pG9-ac-26e"/>
+                <constraint firstItem="HUc-8o-xBI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wo6-OL-pN5"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="header.jpeg" width="750" height="500"/>
+        <image name="profile.jpg" width="400" height="400"/>
+    </resources>
 </document>

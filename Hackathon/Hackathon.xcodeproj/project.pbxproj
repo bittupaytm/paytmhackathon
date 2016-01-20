@@ -17,6 +17,13 @@
 		604963811C4F595500FB0090 /* WhatsAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6049637F1C4F595500FB0090 /* WhatsAppViewController.xib */; };
 		604963851C4F596200FB0090 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604963831C4F596200FB0090 /* TwitterViewController.m */; };
 		604963861C4F596200FB0090 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604963841C4F596200FB0090 /* TwitterViewController.xib */; };
+		C0F394281C4F5D770041F6E6 /* TestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F394271C4F5D770041F6E6 /* TestImage.png */; };
+		C0F3942B1C4F649C0041F6E6 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0F394291C4F649C0041F6E6 /* profile.jpg */; };
+		C0F3942C1C4F649C0041F6E6 /* header.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0F3942A1C4F649C0041F6E6 /* header.jpeg */; };
+		C0F3942F1C4F69030041F6E6 /* CustomAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F3942E1C4F69030041F6E6 /* CustomAnimationView.m */; };
+		C0F394321C4F78AA0041F6E6 /* CustomAnimationViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F394311C4F78AA0041F6E6 /* CustomAnimationViewLayer.m */; };
+		C0F394351C4F79310041F6E6 /* CustomAnimationScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F394341C4F79310041F6E6 /* CustomAnimationScheduler.m */; };
+		C0F394381C4F7A070041F6E6 /* UIImage+CustomAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F394371C4F7A070041F6E6 /* UIImage+CustomAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,17 @@
 		604963821C4F596200FB0090 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		604963831C4F596200FB0090 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		604963841C4F596200FB0090 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = "<group>"; };
+		C0F394271C4F5D770041F6E6 /* TestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestImage.png; sourceTree = "<group>"; };
+		C0F394291C4F649C0041F6E6 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		C0F3942A1C4F649C0041F6E6 /* header.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpeg; sourceTree = "<group>"; };
+		C0F3942D1C4F69030041F6E6 /* CustomAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimationView.h; sourceTree = "<group>"; };
+		C0F3942E1C4F69030041F6E6 /* CustomAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimationView.m; sourceTree = "<group>"; };
+		C0F394301C4F78AA0041F6E6 /* CustomAnimationViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimationViewLayer.h; sourceTree = "<group>"; };
+		C0F394311C4F78AA0041F6E6 /* CustomAnimationViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimationViewLayer.m; sourceTree = "<group>"; };
+		C0F394331C4F79310041F6E6 /* CustomAnimationScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimationScheduler.h; sourceTree = "<group>"; };
+		C0F394341C4F79310041F6E6 /* CustomAnimationScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimationScheduler.m; sourceTree = "<group>"; };
+		C0F394361C4F7A070041F6E6 /* UIImage+CustomAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CustomAnimationView.h"; sourceTree = "<group>"; };
+		C0F394371C4F7A070041F6E6 /* UIImage+CustomAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CustomAnimationView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,9 @@
 				604963741C4F591200FB0090 /* Classes */,
 				604963731C4F590500FB0090 /* AppDelegate */,
 				604963681C4F58F200FB0090 /* Assets.xcassets */,
+				C0F394291C4F649C0041F6E6 /* profile.jpg */,
+				C0F3942A1C4F649C0041F6E6 /* header.jpeg */,
+				C0F394271C4F5D770041F6E6 /* TestImage.png */,
 				6049636A1C4F58F200FB0090 /* LaunchScreen.storyboard */,
 				6049636D1C4F58F200FB0090 /* Info.plist */,
 				6049635C1C4F58F200FB0090 /* Supporting Files */,
@@ -131,6 +152,14 @@
 				604963821C4F596200FB0090 /* TwitterViewController.h */,
 				604963831C4F596200FB0090 /* TwitterViewController.m */,
 				604963841C4F596200FB0090 /* TwitterViewController.xib */,
+				C0F3942D1C4F69030041F6E6 /* CustomAnimationView.h */,
+				C0F3942E1C4F69030041F6E6 /* CustomAnimationView.m */,
+				C0F394301C4F78AA0041F6E6 /* CustomAnimationViewLayer.h */,
+				C0F394311C4F78AA0041F6E6 /* CustomAnimationViewLayer.m */,
+				C0F394331C4F79310041F6E6 /* CustomAnimationScheduler.h */,
+				C0F394341C4F79310041F6E6 /* CustomAnimationScheduler.m */,
+				C0F394361C4F7A070041F6E6 /* UIImage+CustomAnimationView.h */,
+				C0F394371C4F7A070041F6E6 /* UIImage+CustomAnimationView.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -192,11 +221,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F3942C1C4F649C0041F6E6 /* header.jpeg in Resources */,
 				6049636C1C4F58F200FB0090 /* LaunchScreen.storyboard in Resources */,
+				C0F394281C4F5D770041F6E6 /* TestImage.png in Resources */,
 				604963691C4F58F200FB0090 /* Assets.xcassets in Resources */,
 				604963861C4F596200FB0090 /* TwitterViewController.xib in Resources */,
 				604963811C4F595500FB0090 /* WhatsAppViewController.xib in Resources */,
 				6049637C1C4F594300FB0090 /* HomeViewController.xib in Resources */,
+				C0F3942B1C4F649C0041F6E6 /* profile.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +241,13 @@
 			files = (
 				604963611C4F58F200FB0090 /* AppDelegate.m in Sources */,
 				6049635E1C4F58F200FB0090 /* main.m in Sources */,
+				C0F3942F1C4F69030041F6E6 /* CustomAnimationView.m in Sources */,
 				604963801C4F595500FB0090 /* WhatsAppViewController.m in Sources */,
+				C0F394321C4F78AA0041F6E6 /* CustomAnimationViewLayer.m in Sources */,
+				C0F394381C4F7A070041F6E6 /* UIImage+CustomAnimationView.m in Sources */,
 				604963851C4F596200FB0090 /* TwitterViewController.m in Sources */,
 				6049637B1C4F594300FB0090 /* HomeViewController.m in Sources */,
+				C0F394351C4F79310041F6E6 /* CustomAnimationScheduler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +388,7 @@
 				604963721C4F58F200FB0090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

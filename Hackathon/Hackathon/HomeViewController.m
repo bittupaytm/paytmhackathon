@@ -7,9 +7,12 @@
 //
 
 #import "HomeViewController.h"
+#import "TwitterViewController.h"
+#import "WhatsAppViewController.h"
 
 @interface HomeViewController ()
-
+- (IBAction)twitterButtonClicked:(id)sender;
+- (IBAction)watsappButtonClicked:(id)sender;
 @end
 
 @implementation HomeViewController
@@ -25,14 +28,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Button Actions
+- (IBAction)twitterButtonClicked:(id)sender
+{
+    [self showTwitterView];
 }
-*/
 
+- (IBAction)watsappButtonClicked:(id)sender
+{
+    [self showWatsAppView];
+}
+
+#pragma mark Helper Methods
+- (void)showTwitterView
+{
+    TwitterViewController *twitterViewController = [[TwitterViewController alloc]initWithNibName:@"TwitterViewController" bundle:nil];
+    [self.navigationController pushViewController:twitterViewController animated:YES];
+}
+
+- (void)showWatsAppView
+{
+    WhatsAppViewController *whatsAppController = [[WhatsAppViewController alloc]initWithNibName:@"WhatsAppViewController" bundle:nil];
+    [self.navigationController pushViewController:whatsAppController animated:YES];
+    
+}
 @end

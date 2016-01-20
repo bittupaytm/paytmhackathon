@@ -20,7 +20,7 @@
 @end
 
 #define PREFERRED_HEADER_HEIGHT 420
-#define TEXT_ANIMATION_START 300
+#define TEXT_ANIMATION_START 120
 @implementation WhatsAppViewController
 
 - (void)viewDidLoad {
@@ -66,7 +66,7 @@
 
 - (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [NSString stringWithFormat:@"Section: %lu",section+1];
+    return [NSString stringWithFormat:@"Section: %d",section+1];
 }
 
 #pragma mark- UITablewView Delegate (UIScrollView)
@@ -95,29 +95,41 @@
 - (void)animateLabelWithPosition:(float)yPosition withStoppableHeight:(float)stoppableHeight
 {
     CGFloat yPos = -yPosition;
-    if (yPos>=120) {
-        CGRect newFrame = self.labelContainerView.frame;
-        CGFloat xAxis = newFrame.origin.x+2;
-        if (xAxis>=50) {
-            return;
-        }
-        newFrame.origin.x = xAxis;
-        self.labelContainerView.frame = newFrame;
+    if (yPos>=TEXT_ANIMATION_START)
+    {
+        [self moveLabelToRightSide];
     }
     else
     {
-        CGRect newFrame = self.labelContainerView.frame;
-        CGFloat xAxis = newFrame.origin.x-2;
-        if (xAxis<10) {
-            xAxis = 0;
-        }
-        newFrame.origin.x = xAxis;
-        self.labelContainerView.frame = newFrame;
+        [self moveLabelToOriginalSide];
     }
     
 }
 
 #pragma mark- Helper Methods
+
+- (void)moveLabelToRightSide
+{
+    CGRect newFrame = self.labelContainerView.frame;
+    CGFloat xAxis = newFrame.origin.x+2;
+    if (xAxis>=50) {
+        return;
+    }
+    newFrame.origin.x = xAxis;
+    self.labelContainerView.frame = newFrame;
+}
+
+- (void)moveLabelToOriginalSide
+{
+    CGRect newFrame = self.labelContainerView.frame;
+    CGFloat xAxis = newFrame.origin.x-2;
+    if (xAxis<10) {
+        xAxis = 0;
+    }
+    newFrame.origin.x = xAxis;
+    self.labelContainerView.frame = newFrame;
+}
+
 - (void)setupThisView
 {
     [self setUpTableViewOffsets];
@@ -136,14 +148,13 @@
     float headerImageYOffset = 88 + self.animatedView.bounds.size.height - self.view.bounds.size.height;
     CGRect headerImageFrame = _animatedView.frame;
     headerImageFrame.origin.y = headerImageYOffset;
-
 }
+
 - (void)setupAlphaSettingsForViewAndImageView
 {
     [self.alphaView setAlpha:0.f];
     [self.imageView setAlpha:1.0f];
     [self.titleLabel setAdjustsFontSizeToFitWidth:YES];
-
 }
 
 #pragma mark- Button Actions

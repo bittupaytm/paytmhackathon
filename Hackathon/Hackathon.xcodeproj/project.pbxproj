@@ -86,6 +86,7 @@
 		6049635B1C4F58F200FB0090 /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				604963871C4F61CD00FB0090 /* Resources */,
 				604963741C4F591200FB0090 /* Classes */,
 				604963731C4F590500FB0090 /* AppDelegate */,
 				604963681C4F58F200FB0090 /* Assets.xcassets */,
@@ -164,6 +165,13 @@
 			name = Twitter;
 			sourceTree = "<group>";
 		};
+		604963871C4F61CD00FB0090 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +203,7 @@
 				TargetAttributes = {
 					604963581C4F58F200FB0090 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = FEZXP3STWQ;
 					};
 				};
 			};
@@ -351,7 +360,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Hackathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Hackathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";

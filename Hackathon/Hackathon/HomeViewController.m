@@ -13,6 +13,9 @@
 @interface HomeViewController ()
 - (IBAction)twitterButtonClicked:(id)sender;
 - (IBAction)watsappButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *whatsAppButton;
+@property (weak, nonatomic) IBOutlet UIButton *twitterButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation HomeViewController
@@ -27,6 +30,7 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self setupThisView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,5 +61,19 @@
     WhatsAppViewController *whatsAppController = [[WhatsAppViewController alloc]initWithNibName:@"WhatsAppViewController" bundle:nil];
     [self.navigationController pushViewController:whatsAppController animated:YES];
     
+}
+
+- (void)setupThisView
+{
+    [self decorateButton:self.whatsAppButton];
+    [self decorateButton:self.twitterButton];
+    self.imageView.layer.cornerRadius = 5.0f;
+}
+
+- (void)decorateButton:(UIView *)view
+{
+    view.layer.cornerRadius = 5.0f;
+    view.layer.borderColor = [UIColor whiteColor].CGColor;
+    view.layer.borderWidth = 2.0f;
 }
 @end

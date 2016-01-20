@@ -13,12 +13,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 @property (weak, nonatomic) IBOutlet UIView *alphaView;
+@property (weak, nonatomic) IBOutlet UIView *labelContainerView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (assign, nonatomic) float count;
+- (IBAction)backButtonClicked:(id)sender;
 @end
 
-#define PREFERRED_HEADER_HEIGHT 330
+#define PREFERRED_HEADER_HEIGHT 420
 #define TEXT_ANIMATION_START 300
 @implementation WhatsAppViewController
 
@@ -32,18 +33,7 @@
 {
     [super viewDidLayoutSubviews];
     [self.navigationController setNavigationBarHidden:YES];
-    [self.tableView setContentInset:UIEdgeInsetsMake(self.animatedView.bounds.size.height, 0, 0, 0)];
-    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
-    
-    float headerImageYOffset = 88 + self.animatedView.bounds.size.height - self.view.bounds.size.height;
-    CGRect headerImageFrame = _animatedView.frame;
-    headerImageFrame.origin.y = headerImageYOffset;
-    
-    [self.alphaView setAlpha:0.f];
-    [self.imageView setAlpha:1.0f];
-    self.count = 0.0f;
-    [self.titleLabel setAdjustsFontSizeToFitWidth:YES];
-
+    [self setupThisView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +44,7 @@
 #pragma mark- TableView Datasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,6 +59,17 @@
     return cell;
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 5.0f;
+}
+
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [NSString stringWithFormat:@"Section: %lu",section+1];
+}
+
+#pragma mark- UITablewView Delegate (UIScrollView)
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat scrollOffset = -scrollView.contentOffset.y;
@@ -95,24 +96,59 @@
 {
     CGFloat yPos = -yPosition;
     if (yPos>=120) {
-        CGRect newFrame = self.titleLabel.frame;
+        CGRect newFrame = self.labelContainerView.frame;
         CGFloat xAxis = newFrame.origin.x+2;
         if (xAxis>=50) {
             return;
         }
         newFrame.origin.x = xAxis;
-        self.titleLabel.frame = newFrame;
+        self.labelContainerView.frame = newFrame;
     }
     else
     {
-        CGRect newFrame = self.titleLabel.frame;
+        CGRect newFrame = self.labelContainerView.frame;
         CGFloat xAxis = newFrame.origin.x-2;
         if (xAxis<10) {
-            return;
+            xAxis = 0;
         }
         newFrame.origin.x = xAxis;
-        self.titleLabel.frame = newFrame;
+        self.labelContainerView.frame = newFrame;
     }
     
+}
+
+#pragma mark- Helper Methods
+- (void)setupThisView
+{
+    [self setUpTableViewOffsets];
+    [self setupImageViewAspects];
+    [self setupAlphaSettingsForViewAndImageView];
+}
+
+- (void)setUpTableViewOffsets
+{
+    [self.tableView setContentInset:UIEdgeInsetsMake(self.animatedView.bounds.size.height, 0, 0, 0)];
+    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+}
+
+- (void)setupImageViewAspects
+{
+    float headerImageYOffset = 88 + self.animatedView.bounds.size.height - self.view.bounds.size.height;
+    CGRect headerImageFrame = _animatedView.frame;
+    headerImageFrame.origin.y = headerImageYOffset;
+
+}
+- (void)setupAlphaSettingsForViewAndImageView
+{
+    [self.alphaView setAlpha:0.f];
+    [self.imageView setAlpha:1.0f];
+    [self.titleLabel setAdjustsFontSizeToFitWidth:YES];
+
+}
+
+#pragma mark- Button Actions
+- (IBAction)backButtonClicked:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end
